@@ -42,7 +42,7 @@ def default():
 def Checkans():
     global answers,words,num
     var=e.get()
-    if var.lower==answers[num]:
+    if var==answers[num]:
         messagebox.showinfo("yes","this is correct answer")
         reset()
     else:
@@ -98,7 +98,7 @@ Resetbtn.pack()
 
 exitbtn=Button(
     root,
-    text="EXit",
+    text="EXIT",
     font=("Times",12),
     command=root.quit
 )
